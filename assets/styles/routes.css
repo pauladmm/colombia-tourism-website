@@ -1,0 +1,278 @@
+/* -------------------REGION SECTION----------------- */
+.explore-region {
+  width: 100%;
+
+  position: relative;
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* -------------------REGION GALLERY SECTION----------------- */
+.region-gallery {
+  width: 100%;
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr));
+}
+
+.item {
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.item-1 {
+  background-image: url(../../assets/img/andes.jpg);
+}
+.item-2 {
+  background-image: url(../../assets/img/cartagena.png);
+}
+.item-3 {
+  background-image: url(../../assets/img/selva.jpg);
+}
+.item-4 {
+  background-image: url(../../assets/img/llanura.jpg);
+}
+.item-5 {
+  background-image: url(../../assets/img/pacifico.jpg);
+}
+.item-6 {
+  background-image: url(../../assets/img/san-andres.jpg);
+}
+
+/* -------------------REGION INFO SECTION----------------- */
+.region-text {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+aside {
+  flex: 1;
+  padding: clamp(2.5rem, 2rem + 1.667vw, 4rem) clamp(2.5rem, 1rem + 5vw, 7rem);
+  p {
+    line-height: 1.4;
+    margin-top: 0.9rem;
+  }
+}
+
+/* -------------------FAMOUS ROUTES SECTION----------------- */
+.welcome {
+  padding-left: 0;
+  margin-top: 4rem;
+  padding-bottom: 0;
+}
+.welcome-routes {
+  margin-top: 0;
+}
+.routes-resume {
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin-inline: auto;
+  padding-bottom: 4rem;
+}
+.travel-pic {
+  flex: 2;
+  max-width: 640px;
+  aspect-ratio: 4/3;
+  background-image: url(../../assets/img/routes.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.mini-routes {
+  max-width: 450px;
+  margin-left: 3rem;
+  flex: 1;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: column;
+  padding: clamp(1rem, 0.333rem + 2.222vw, 3rem);
+}
+.miniroute-1,
+.miniroute-2 {
+  border-bottom: 1px solid rgb(45, 41, 58);
+  padding-bottom: 1rem;
+}
+
+.route {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-flow: row;
+
+  align-content: flex-end;
+  justify-content: flex-start;
+  align-items: center;
+  img {
+    aspect-ratio: 16/9;
+    max-width: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 1.5rem;
+}
+
+/* -------------------DETAILS ROUTES HEADER----------------- */
+
+.miniheader {
+  margin-top: 4rem;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--amarillo-sol);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+.info-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  p {
+    margin-left: 0.3rem;
+  }
+}
+/* -------------------DETAILS ROUTES SECTION----------------- */
+.content-route {
+  display: flex;
+  padding: 3rem;
+}
+.content-info {
+  flex: 1;
+  h2 {
+    margin-bottom: 2.5rem;
+  }
+}
+.content-pic {
+  flex: 1;
+  max-width: 500px;
+  aspect-ratio: 4/5;
+  background-image: url(../../assets/img/g16.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  margin-right: 4rem;
+}
+.content-icons {
+  display: flex;
+  align-items: baseline;
+  p {
+    margin-left: 0.4rem;
+  }
+}
+/* -------------------PLAN ROUTES SECTION----------------- */
+.planning {
+  width: 80%;
+
+  transform: translateX(12%);
+  h2 {
+    margin-bottom: 2.5rem;
+  }
+}
+.text {
+  p {
+    margin-left: 5rem;
+    width: 80%;
+    line-height: 1.4;
+    margin-top: 1.5rem;
+  }
+}
+
+.route-2 {
+  background-image: url(../../assets/img/tour2.png);
+}
+
+.route-3 {
+  background-image: url(../../assets/img/tour2.jpg);
+}
+
+/* -------------------RESPONSIVE DESIGN----------------- */
+
+@media screen and (max-width: 1200px) {
+  .top {
+    .text {
+      width: 100%;
+    }
+  }
+  .routes-resume {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .region-text {
+    flex-direction: column;
+  }
+  .routes-resume {
+    flex-direction: column;
+    width: 80%;
+    margin-inline: auto;
+    gap: 1.5rem;
+    .travel-pic {
+      width: 100%;
+      max-width: none;
+    }
+    .mini-routes {
+      max-width: none;
+      margin-left: 0;
+      gap: 1rem;
+    }
+  }
+  .icons {
+    display: none;
+  }
+  .content-route {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    padding: 3.5rem;
+    gap: 2rem;
+    .content-pic {
+      margin: 0;
+      max-width: none;
+      aspect-ratio: 16/5;
+      width: 100%;
+    }
+    aside {
+      padding: 0;
+    }
+  }
+}
+@media screen and (max-width: 960px) {
+}

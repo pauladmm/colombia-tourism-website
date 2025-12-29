@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Colombia Maravillosa - Contactanos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/styles/styles.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/styles/contact.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div class="main-nav">
+        <div class="nav-left">
+          <a href="#">CL</a>
+        </div>
+        <div class="nav-right">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Sobre nosotros</a>
+          <a href="routes.html">Rutas Guiadas</a>
+          <a href="contact.html" class="button">Contáctanos</a>
+        </div>
+      </div>
+
+      <div id="progress"></div>
+    </nav>
+    <!-- Header -->
+    <header>
+      <span class="header-main-title">CONTÁCTANOS</span>
+    </header>
+    <!-- Back to Top Button -->
+    <button
+      class="scroll-top-btn"
+      id="scrollBtn"
+      aria-label="Volver arriba"
+    ></button>
+    <!-- How to Arrive -->
+    <section class="welcome top">
+      <aside class="welcome-title">
+        <div class="line"></div>
+        <div class="text">
+          <h1>¿Cómo llegar a Colombia?</h1>
+        </div>
+      </aside>
+    </section>
+
+    <div class="world-routes">
+      <h2>Trayectos desde las Ciudades Principales</h2>
+      <div class="main-router-container">
+        <div class="map-container" id="mapContainer">
+          <div class="colombia-marker">
+            <div></div>
+            <span class="city-name">Colombia</span>
+          </div>
+        </div>
+
+        <div class="route-cards" id="routeCards"></div>
+      </div>
+    </div>
+    <!-- Tourism Offices -->
+    <section class="welcome second">
+      <aside class="welcome-title">
+        <div class="line"></div>
+        <div class="text">
+          <h1>Nuestras Oficinas de Turismo</h1>
+        </div>
+      </aside>
+    </section>
+
+    <div class="tourism-offices">
+      <h2>Oficinas de Turismo en Colombia</h2>
+      <p>
+        Encuentra nuestra red de oficinas de turismo para planear tu viaje
+        perfecto
+      </p>
+
+      <div class="offices-flex">
+        <!-- Oficina Bogotá -->
+        <div class="office-card">
+          <div class="office-content">
+            <h3 class="office-title">Oficina Bogotá</h3>
+            <div class="office-info">
+              <p>
+                Ubicada en el corazón de la capital, nuestra oficina principal
+                ofrece información completa sobre todo el país y servicios
+                especializados para turistas.
+              </p>
+            </div>
+            <div class="contact-info">
+              <div class="contact-item">📍 Calle 28 #13A-15, Bogotá</div>
+              <div class="contact-item">📞 +57 (1) 555-0123</div>
+              <div class="contact-item">✉️ bogota@turismo.co</div>
+            </div>
+            <div class="officemap-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9324847000735!2d-74.0729059!3d4.6097100!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2e545a44b1%3A0x4b15c55777caa702!2sCentro%20Internacional!5e0!3m2!1ses!2sco!4v1630000000000!5m2!1ses!2sco"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Oficina Medellín -->
+        <div class="office-card">
+          <div class="office-content">
+            <h3 class="office-title">Oficina Medellín</h3>
+            <div class="office-info">
+              <p>
+                Especializada en turismo de innovación y cultura paisa, nuestra
+                oficina en Medellín te ayuda a descubrir la transformación de la
+                ciudad.
+              </p>
+            </div>
+            <div class="contact-info">
+              <div class="contact-item">📍 Carrera 43A #1-50, Medellín</div>
+              <div class="contact-item">📞 +57 (4) 555-0123</div>
+              <div class="contact-item">✉️ medellin@turismo.co</div>
+            </div>
+            <div class="officemap-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2!2d-75.5!3d6.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428dfb80fad05%3A0x42137cfcc7b53b56!2sMedell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1630000000000!5m2!1ses!2sco"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Oficina Cartagena -->
+        <div class="office-card">
+          <div class="office-content">
+            <h3 class="office-title">Oficina Cartagena</h3>
+            <div class="office-info">
+              <p>
+                Ubicada en la Ciudad Amurallada, esta oficina se especializa en
+                turismo histórico y de playa, ofreciendo rutas por el Caribe
+                colombiano.
+              </p>
+            </div>
+            <div class="contact-info">
+              <div class="contact-item">
+                📍 Calle de la Iglesia #3-86, Cartagena
+              </div>
+              <div class="contact-item">📞 +57 (5) 555-0123</div>
+              <div class="contact-item">✉️ cartagena@turismo.co</div>
+            </div>
+            <div class="officemap-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.0!2d-75.5!3d10.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5b43c39288f2c3%3A0x3f13c1b27e00c78c!2sCartagena%2C%20Bolívar!5e0!3m2!1ses!2sco!4v1630000000000!5m2!1ses!2sco"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="welcome second">
+      <aside class="welcome-title">
+        <div class="line"></div>
+        <div class="text">
+          <h1>Déjanos ayudarte</h1>
+        </div>
+      </aside>
+    </section>
+    <section class="contact-section">
+      <div class="contact-text">
+        <p class="contact-title">Tu viaje empieza ahora</p>
+        <h2 class="contact-heading">
+          Estamos aquí <br />para resolver tus dudas<br />
+        </h2>
+
+        <div class="social-links">
+          <button class="social-button">
+            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
+              />
+            </svg>
+          </button>
+
+          <button class="social-button">
+            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
+              />
+            </svg>
+          </button>
+
+          <button class="social-button">
+            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"
+              />
+            </svg>
+          </button>
+
+          <button class="social-button">
+            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.892l4.917 2.892-4.917 2.892v-5.784z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Tu nombre"
+          required
+        />
+        <input
+          type="email"
+          class="form-input"
+          placeholder="Tu correo"
+          required
+        />
+        <textarea
+          class="form-textarea"
+          placeholder="Escribe un mensaje"
+          required
+        ></textarea>
+        <button type="submit" class="btn">ENVIAR MENSAJE</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo and Contact Section -->
+        <div class="footer-main">
+          <div class="footer-info"></div>
+
+          <!-- Navigation Links -->
+          <div class="footer-nav">
+            <h3><a href="index.html">Inicio</a></h3>
+            <ul class="nav-list">
+              <li><a href="index.html">Descubre Colombia</a></li>
+              <li><a href="index.html">Explora la Región</a></li>
+              <li><a href="index.html">Nuestra Historia</a></li>
+              <li><a href="index.html">Galería</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h3><a href="about.html">Sobre Nosotros</a></h3>
+            <ul class="nav-list">
+              <li><a href="about.html">¿Por qué Viajar a Colombia?</a></li>
+              <li><a href="about.html">Ministerio de Turismo</a></li>
+              <li><a href="about.html">Valores</a></li>
+              <li><a href="about.html">Identidad</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h3><a href="routes.html">Principales Rutas</a></h3>
+            <ul class="nav-list">
+              <li><a href="routes.html">Regiones</a></li>
+              <li><a href="routes.html">Nuestras Rutas más Famosas</a></li>
+              <li><a href="routes.html">Ruta del Café</a></li>
+              <li><a href="routes.html">La Ciudad Perdida</a></li>
+              <li><a href="routes.html">Parque Nacional del Tayrona</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h3><a href="contact.html">Contacta</a></h3>
+            <ul class="nav-list">
+              <li><a href="contact.html">¿Cómo llegar a Colombia?</a></li>
+              <li><a href="contact.html">Oficinas de Turismo</a></li>
+              <li><a href="contact.html">Contacta</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+          <div class="social-icons">
+            <!-- Espacio para tus iconos de redes sociales -->
+            <button class="social-button">
+              <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
+                />
+              </svg>
+            </button>
+
+            <button class="social-button">
+              <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
+                />
+              </svg>
+            </button>
+
+            <button class="social-button">
+              <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"
+                />
+              </svg>
+            </button>
+
+            <button class="social-button">
+              <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.892l4.917 2.892-4.917 2.892v-5.784z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+          <p>
+            &copy; 2025 Ministerio de Turismo de Colombia. Todos los derechos
+            reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script2.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

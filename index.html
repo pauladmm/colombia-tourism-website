@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Colombia Maravillosa - Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/styles/styles.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/styles/home.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div class="main-nav">
+        <div class="nav-left">
+          <a href="#">CL</a>
+        </div>
+        <div class="nav-right">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Sobre nosotros</a>
+          <a href="routes.html">Rutas Guiadas</a>
+          <a href="contact.html" class="button">Contáctanos</a>
+        </div>
+      </div>
+
+      <div id="progress"></div>
+    </nav>
+    <!-- Header -->
+    <header>
+      <span class="sub">Explora</span>
+      <span class="header-main-title">COLOMBIA</span>
+
+      <span class="sub">a tu ritmo</span>
+    </header>
+    <!-- Back to Top Button -->
+    <button
+      class="scroll-top-btn"
+      id="scrollBtn"
+      aria-label="Volver arriba"
+    ></button>
+    <!-- Banner -->
+    <div class="banner">
+      <div class="search-group">
+        <label>Región de interés</label>
+        <input type="text" placeholder="Palabras clave" />
+      </div>
+
+      <div class="search-group">
+        <label>Cuándo</label>
+        <input type="date" value="2025-01-06" />
+      </div>
+
+      <div class="search-group">
+        <label>Tipo de Experiencia</label>
+        <select>
+          <option>Aventura</option>
+          <option>Cultura</option>
+          <option>Gastronomía</option>
+        </select>
+      </div>
+
+      <a href="routes.html"><button class="btn btn-banner">Descubre Itinerarios ></button></a>
+    </div>
+    <!-- Welcome section -->
+    <section class="welcome top">
+      <aside class="welcome-title">
+        <div class="line"></div>
+        <div class="text">
+          <h1>Descubre Colombia <br /><span>Maravillosa</span></h1>
+        </div>
+      </aside>
+      <aside class="welcome-text">
+        <h2>El Corazón Vibrante de Sudamérica</h2>
+        <p>
+          Bienvenida a la tierra donde la diversidad es protagonista y cada
+          rincón cuenta una historia única. Desde las exuberantes selvas del
+          Amazonas hasta las playas doradas del Caribe, Colombia ofrece paisajes
+          deslumbrantes, ciudades llenas de historia y una cultura rica en
+          tradiciones.
+        </p>
+
+        <p>
+          Descubre la calidez de su gente, la magia de sus fiestas y el sabor
+          inconfundible de su gastronomía. Atrévete a recorrer este paraíso y
+          vive una experiencia inolvidable en el destino más alegre y colorido
+          de América Latina. ¡Colombia te espera con los brazos abiertos!
+        </p>
+      </aside>
+    </section>
+    <!-- Experiences -->
+    <section class="experiences">
+      <h2>Vive Experiencias Únicas en Colombia</h2>
+      <!-- Experience 1 -->
+      <div class="experience" id="exp1">
+        <div class="experience-header">
+          <span class="number">01</span>
+          <span class="title">Paisajes Asombrosos y Pura Riqueza</span>
+          <button class="toggle-btn" onclick="toggleContent('content1', this)">
+            →
+          </button>
+        </div>
+        <div class="experience-content" id="content1">
+          <img src="assets/img/discover1.jpg" alt="Paisajes Asombrosos" />
+          <div class="text">
+            <p>
+              Desde la majestuosidad de los Andes hasta las vastas llanuras de
+              los Llanos, Colombia ofrece una sinfonía de paisajes que quitan el
+              aliento. Sumérgete en la belleza natural de los parques
+              nacionales, los cafetales ondulantes y las playas cristalinas.
+            </p>
+          </div>
+          <button class="btn"><a href="routes.html">Explora ></a></button>
+        </div>
+      </div>
+      <!-- Experience 2 -->
+      <div class="experience" id="exp2">
+        <div class="experience-header">
+          <span class="number">02</span>
+          <span class="title">Patrimonio Cultural y Ciudades Mágicas</span>
+          <button class="toggle-btn" onclick="toggleContent('content2', this)">
+            →
+          </button>
+        </div>
+        <div class="experience-content" id="content2">
+          <img src="assets/img/discover2.jpg" alt="Patrimonio Cultural" />
+          <div class="text">
+            <p>
+              Colombia es un mosaico de culturas vibrantes y herencias
+              milenarias. Recorre sus ciudades coloniales, como Cartagena y
+              Santa Fe de Antioquia, donde la historia cobra vida en calles
+              adoquinadas y coloridas fachadas.
+            </p>
+          </div>
+          <button class="btn"><a href="routes.html">Explora ></a></button>
+        </div>
+      </div>
+      <!-- Experience 3 -->
+      <div class="experience" id="exp3">
+        <div class="experience-header">
+          <span class="number">03</span>
+          <span class="title">Experiencias Únicas e Irrepetibles</span>
+          <button class="toggle-btn" onclick="toggleContent('content3', this)">
+            →
+          </button>
+        </div>
+        <div class="experience-content" id="content3">
+          <img src="assets/img/dicover3.jpg" alt="Experiencias Únicas" />
+          <div class="text">
+            <p>
+              La adrenalina fluye en Colombia, un paraíso para los amantes de la
+              aventura. Cada rincón del país es una invitación a descubrir
+              nuevas emociones y vivir experiencias inolvidables en medio de
+              paisajes espectaculares.
+            </p>
+          </div>
+          <button class="btn"><a href="routes.html">Explora ></a></button>
+        </div>
+      </div>
+      <!-- Experience 4 -->
+      <div class="experience" id="exp4">
+        <div class="experience-header">
+          <span class="number">04</span>
+          <span class="title">Biodiversidad Inigualable y Naturaleza Viva</span>
+          <button class="toggle-btn" onclick="toggleContent('content4', this)">
+            →
+          </button>
+        </div>
+        <div class="experience-content" id="content4">
+          <img src="assets/img/discover4.jpg" alt="Experiencias Únicas" />
+          <div class="text">
+            <p>
+              Colombia es el segundo país más biodiverso del mundo. Sus
+              paisajes, que incluyen selvas amazónicas, montañas nevadas, y
+              costas interminables, albergan más de 50,000 especies. Desde el
+              avistamiento de aves exóticas hasta la exploración de la flora y
+              fauna amazónica, el país ofrece una experiencia sin igual para los
+              amantes de la naturaleza.
+            </p>
+          </div>
+          <button class="btn"><a href="routes.html">Explora ></a></button>
+        </div>
+      </div>
+    </section>
+    <!-- Loc -->
+    <section class="welcome">
+      <aside class="welcome-title">
+        <div class="line"></div>
+        <div class="text">
+          <h1>Localización y Regiones</h1>
+        </div>
+      </aside>
+      <aside class="welcome-text">
+        <br />
+        <p>
+          Bienvenida a la tierra donde la diversidad es protagonista y cada
+          rincón cuenta una historia única. Desde las exuberantes selvas del
+          Amazonas hasta las playas doradas del Caribe, Colombia ofrece paisajes
+          deslumbrantes, ciudades llenas de historia y una cultura rica en
+          tradiciones.
+        </p>
+      </aside>
+    </section>
+    <!-- Region card -->
+    <section class="region">
+      <div class="text-background">
+        <span class="main-text">Diversidad <br />en cada Región</span>
+        <span class="sub-text">el Corazón de América del Sur</span>
+      </div>
+      <div class="region-card">
+        <p>¿Sabías que? <i class="fa-solid fa-magnifying-glass"></i></i></p>
+        <p>
+          Colombia es el único país del continente con <span class="bold">costas</span> en el <span class="bold">océano
+            Atlántico y el Pacífico</span>, lo que le otorga una geografía única y rica
+          en biodiversidad. Con más de <span class="bold">52 millones de habitantes</span>, es un país
+          vibrante y multicultural.
+        </p>
+        <p>
+          Sus seis regiones principales <span class="bold">—Andina, Caribe, Pacífica, Amazónica,
+            Llanos Orientales e Insular—</span> ofrecen paisajes contrastantes que van
+          desde <span class="bold">montañas majestuosas</span> hasta <span class="bold">selvas exuberantes</span> y <span class="bold">playas
+            paradisíacas</span>.
+        </p>
+        <button class="btn"><a href="routes.html">Explora la Region ></a></button>
+      </div>
+    </section>
+    <!-- Colombian Folklore -->
+    <section class="welcome">
+      <aside class="welcome-title">
+        <div class="text">
+          <h1>Un País de Sabores, Ritmos y Aventuras</h1>
+        </div>
+      </aside>
+      <aside class="welcome-text">
+        <p>
+          Descubre la esencia de Colombia a través de sus festividades
+          vibrantes, paisajes impresionantes y una gastronomía que cautiva los
+          sentidos. Desde los desfiles llenos de color hasta los sabores
+          tradicionales, cada rincón del país ofrece una aventura única que
+          combina cultura, naturaleza y alegría.
+        </p>
+      </aside>
+    </section>
+    
+    <section class="region-colombia">
+      <!-- Barranquilla Carnival -->
+      <div class="card card1">
+        <div class="card-text">
+          <h3>Carnaval de Barranquilla</h3>
+          <p>
+            Declarado Patrimonio Cultural Inmaterial de la Humanidad por la
+            UNESCO. Durante cuatro días, Barranquilla se llena de música,
+            bailes, disfraces y desfiles vibrantes.
+          </p>
+        </div>
+        <div class="overlay">
+          <a href="routes.html"><img src="assets/img/pais1.jpg" alt="Caribe Colombiano" /></a>
+          <div class="hover-overlay">
+            <i class="fa-regular fa-circle-right"></i>
+            <div class="info-text">Saber Más</div>
+          </div>
+        </div>
+      </div>
+      <!-- Ciudad Perdida -->
+      <div class="card card2">
+        <div class="card-text">
+          <h3>Senderismo en la Ciudad Perdida</h3>
+          <p>
+            Este antiguo asentamiento indígena de los Tayrona, ubicado en la
+            Sierra Nevada de Santa Marta, es accesible solo a pie. Experimenta 6
+            días a través de selvas exuberantes y ríos cristalinos.
+          </p>
+        </div>
+        <div class="overlay">
+          <a href="routes.html"><img src="assets/img/pais2.jpg" alt="Caribe Colombiano" /></a>
+          <div class="hover-overlay">
+            <i class="fa-regular fa-circle-right"></i>
+            <div class="info-text">Saber Más</div>
+          </div>
+        </div>
+      </div>
+      <!-- Flowers Festival -->
+      <div class="card card3">
+        <div class="card-text">
+          <h3>Festival de las Flores en Medellín</h3>
+          <p>
+            Cada agosto, Medellín celebra su patrimonio cultural con un festival
+            lleno de color, música y tradición. El Desfile de Silleteros, donde
+            campesinos cargan coloridas silletas de flores, es emblemático.
+          </p>
+        </div>
+        <div class="overlay">
+          <a href="routes.html"><img src="assets/img/pais3.png" alt="Caribe Colombiano" /></a>
+          <div class="hover-overlay">
+            <i class="fa-regular fa-circle-right"></i>
+            <div class="info-text">Saber Más</div>
+          </div>
+        </div>
+      </div>
+      <!-- Gastronomy -->
+      <div class="card card1">
+        <div class="card-text">
+          <h3>Sabores Únicos y Tradicionales</h3>
+          <p>
+            La cocina colombiana es un reflejo de su diversidad cultural y
+            geográfica. Cada región ofrece sabores únicos, desde el café del eje
+            cafetero hasta los dulces costeños.
+          </p>
+        </div>
+        <div class="overlay">
+          <a href="routes.html"><img src="assets/img/pais4.jpg" alt="Caribe Colombiano" /></a>
+          <div class="hover-overlay">
+            <i class="fa-regular fa-circle-right"></i>
+            <div class="info-text">Saber Más</div>
+          </div>
+        </div>
+      </div>
+      <!-- Whales -->
+      <div class="card card2">
+        <div class="card-text">
+          <h3>Avistamiento de Ballenas</h3>
+          <p>
+            De julio a octubre, las ballenas jorobadas migran a las cálidas
+            aguas del Pacífico colombiano para reproducirse. Podrás verlas em
+            lugar como Bahía Solano y Nuquí.
+          </p>
+        </div>
+        <div class="overlay">
+          <a href="routes.html"><img src="assets/img/pais4.png" alt="Caribe Colombiano" /></a>
+          <div class="hover-overlay">
+            <i class="fa-regular fa-circle-right"></i>
+            <div class="info-text">Saber Más</div>
+          </div>
+        </div>
+      </div>
+      <!-- Cali -->
+      <div class="card card3">
+        <div class="card-text">
+          <h3>Feria de Cali</h3>
+          <p>
+            Cada diciembre, Cali se transforma en la capital mundial de la salsa
+            durante su feria anual. Desfiles, conciertos y competencias de salsa
+            llenan las calles de energía y ritmo.
+          </p>
+        </div>
+        <div class="overlay">
+          <a href="routes.html"><img src="assets/img/pais6.jpeg" alt="Caribe Colombiano" /></a>
+          <div class="hover-overlay">
+            <i class="fa-regular fa-circle-right"></i>
+            <div class="info-text">Saber Más</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- History -->
+    <section class="welcome history">
+      <aside class="welcome-title">
+        <div class="line"></div>
+        <div class="text">
+          <h1>Orgullosos de Nuestra Historia</h1>
+        </div>
+      </aside>
+      <aside class="welcome-text">
+        <h2>Desde las Raíces hasta el mundo Moderno</h2>
+        <p>
+          Colombia es una tierra donde el pasado y el presente se entrelazan
+          para contar una historia fascinante. A lo largo de los siglos, el país
+          ha evolucionado, superando desafíos y transformándose en una nación
+          vibrante y resiliente.
+        </p>
+        <div class="points">
+          <aside class="roots">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="30.84px"
+              height="24px"
+              viewBox="0 0 42.8 33.3"
+              style="enable-background: new 0 0 42.8 33.3"
+              xml:space="preserve"
+            >
+              <defs></defs>
+              <g>
+                <path
+                  d="M21.4,0c-6,0-10.8,2.7-14.3,6c-3.5,3.2-5.8,7.1-6.9,9.7c-0.2,0.6-0.2,1.2,0,1.8c1.1,2.7,3.4,6.5,6.9,9.7
+                  c3.5,3.3,8.3,6,14.3,6s10.8-2.7,14.3-6c3.5-3.2,5.8-7.1,6.9-9.7c0.2-0.6,0.2-1.2,0-1.8c-1.1-2.7-3.4-6.5-6.9-9.7
+                  C32.2,2.7,27.4,0,21.4,0z M10.7,16.6c0-5.9,4.8-10.7,10.7-10.7s10.7,4.8,10.7,10.7s-4.8,10.7-10.7,10.7S10.7,22.5,10.7,16.6z
+                   M21.4,11.9c0,2.6-2.1,4.8-4.8,4.8c-0.5,0-1-0.1-1.5-0.2c-0.4-0.1-0.9,0.1-0.9,0.5c0,0.5,0.1,1,0.2,1.5c1,3.8,4.9,6.1,8.7,5
+                  c3.8-1,6.1-4.9,5-8.7c-0.8-3.1-3.6-5.2-6.6-5.3c-0.4,0-0.7,0.5-0.5,0.9C21.3,10.9,21.4,11.4,21.4,11.9L21.4,11.9z"
+                />
+              </g>
+            </svg>
+            <h4>Nuestras Raíces</h4>
+            <p>
+              Desde las antiguas civilizaciones indígenas, como los Muiscas y
+              los Taironas, que dejaron un legado de oro y mitología, cada época
+              ha dejado su huella.
+            </p>
+          </aside>
+          <aside class="new-era">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="30.84px"
+              height="24px"
+              viewBox="0 0 42.8 33.3"
+              style="enable-background: new 0 0 42.8 33.3"
+              xml:space="preserve"
+            >
+              <defs></defs>
+              <g>
+                <path
+                  d="M21.4,0c-6,0-10.8,2.7-14.3,6c-3.5,3.2-5.8,7.1-6.9,9.7c-0.2,0.6-0.2,1.2,0,1.8c1.1,2.7,3.4,6.5,6.9,9.7
+                  c3.5,3.3,8.3,6,14.3,6s10.8-2.7,14.3-6c3.5-3.2,5.8-7.1,6.9-9.7c0.2-0.6,0.2-1.2,0-1.8c-1.1-2.7-3.4-6.5-6.9-9.7
+                  C32.2,2.7,27.4,0,21.4,0z M10.7,16.6c0-5.9,4.8-10.7,10.7-10.7s10.7,4.8,10.7,10.7s-4.8,10.7-10.7,10.7S10.7,22.5,10.7,16.6z
+                   M21.4,11.9c0,2.6-2.1,4.8-4.8,4.8c-0.5,0-1-0.1-1.5-0.2c-0.4-0.1-0.9,0.1-0.9,0.5c0,0.5,0.1,1,0.2,1.5c1,3.8,4.9,6.1,8.7,5
+                  c3.8-1,6.1-4.9,5-8.7c-0.8-3.1-3.6-5.2-6.6-5.3c-0.4,0-0.7,0.5-0.5,0.9C21.3,10.9,21.4,11.4,21.4,11.9L21.4,11.9z"
+                />
+              </g>
+            </svg>
+            <h4>Nueva Era</h4>
+            <p>
+              Hoy, Colombia es un testimonio viviente de su rica herencia
+              cultural, donde las tradiciones ancestrales coexisten con la
+              modernidad.
+            </p>
+          </aside>
+        </div>
+      </aside>
+      <!-- History Card -->
+      <div class="history-card"><div class="region-card">
+        <p>¿Sabías que? <i class="fa-solid fa-magnifying-glass"></i></i></p>
+        <p>          
+          Las mujeres conocidas como <span class="bold">palenqueras</span>, son descendientes de comunidades esclavizadas que lograron libertad en los pueblos de San Basilio de Palenque, el primer territorio libre de América. </p><p>Sus vestidos de colores simbolizan la resistencia cultural afrocolombiana y la herencia africana en la región.
+        </p>
+        
+        <button class="btn"><a href="about.html">Saber más ></a></button>
+      </div></div>
+      
+      <img src="assets/img/history.jpg" alt="Palenquera" />
+    </section>
+    <!-- Milestone -->
+    <section class="milestone">
+      <div class="milestone-text">
+        <h1>¿Quieres saber más sobre nuestra Historia?</h1>
+        <div class="timeline-navigation">
+          <button class="active">S. VI</button>
+          <button>1533</button>
+          <button>1810</button>
+          <button>1991</button>
+          <button>2024</button>
+        </div>
+        <h3>Culturas Precolombinas</h3>
+        <p>
+          Colombia albergó diversas culturas indígenas como los Taironas,
+          Muiscas y Zenúes, quienes desarrollaron avanzadas sociedades y
+          tecnologías.
+        </p>
+        <p>
+          <span class="p2"
+            >Sus seis regiones principales —Andina, Caribe, Pacífica, Amazónica,
+            Llanos Orientales e Insular— ofrecen paisajes contrastantes que van
+            desde montañas majestuosas hasta selvas exuberantes y playas
+            paradisíacas.</span
+          >
+        </p>
+        <button class="btn"><a href="about.html">Saber más ></a></button>
+      </div>
+      <div class="milestone-img">
+        <img src="assets/img/muiscas.jpg" alt="Oro muisca" />
+      </div>
+    </section>
+    <!-- Travel Plan -->
+    <section class="welcome wel4">
+      <aside class="welcome-title">
+        <div class="line"></div>
+        <div class="text">
+          <h1>Prepara tu Viaje a Colombia</h1>
+        </div>
+      </aside>
+      <aside class="welcome-text">
+        <h2>Explora y Planifica tu Aventura</h2>
+        <p>
+          Organiza cada detalle de tu viaje, desde descubrir los destinos más
+          increíbles hasta planificar cómo llegar desde cualquier parte del
+          mundo. Descubre los lugares más fascinantes, las actividades únicas y
+          la riqueza cultural que te esperan. Consulta cómo llegar a Colombia y
+          organiza cada detalle de tu experiencia.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-secondary"><a href="routes.html">Explora ></a></button>
+          <button class="btn"><a href="contact.html">Planifica ></a></button>
+        </div>
+      </aside>
+    </section>
+    <!-- Gallery -->
+    <section class="welcome">
+      <aside class="welcome-title">
+        <div class="line"></div>
+        <div class="text">
+          <h1>Colombia en Imágenes: Un Viaje Visual</h1>
+        </div>
+      </aside>
+      <aside class="welcome-text">
+        <p>
+          Descubre la belleza y diversidad de Colombia a través de fotografías
+          que capturan su cultura, paisajes y tradiciones únicas. Déjate
+          inspirar por cada rincón de este maravilloso país.
+        </p>
+      </aside>
+    </section>
+    <article class="gallery-items">
+      <div class="item item-1 item-tall"></div>
+      <div class="item item-2"></div>
+      <div class="item item-3"></div>
+      <div class="item item-17"></div>
+      <div class="item item-4 item-wide"></div>
+      <div class="item item-5 item-tall"></div>
+      <div class="item item-6 item-tall item-wide"></div>
+      <div class="item item-7"></div>
+      <div class="item item-8"></div>
+      <div class="item item-9 item-tall"></div>
+      <div class="item item-10 item-tall"></div>
+      <div class="item item-11"></div>
+      <div class="item item-12"></div>
+      <div class="item item-13 item-wide"></div>
+      <div class="item item-14 item-tall"></div>
+      <div class="item item-15 item-wide"></div>
+      <div class="item item-16"></div>
+    </article>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        
+        <div class="footer-main">
+          <div class="footer-info"></div>
+
+          
+          <div class="footer-nav">
+            <h3><a href="index.html">Inicio</a></h3>
+            <ul class="nav-list">
+              <li><a href="index.html">Descubre Colombia</a></li>
+              <li><a href="index.html">Explora la Región</a></li>
+              <li><a href="index.html">Nuestra Historia</a></li>
+              <li><a href="index.html">Galería</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h3><a href="about.html">Sobre Nosotros</a></h3>
+            <ul class="nav-list">
+              <li><a href="about.html">¿Por qué Viajar a Colombia?</a></li>
+              <li><a href="about.html">Ministerio de Turismo</a></li>
+              <li><a href="about.html">Valores</a></li>
+              <li><a href="about.html">Identidad</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h3><a href="routes.html">Principales Rutas</a></h3>
+            <ul class="nav-list">
+              <li><a href="routes.html">Regiones</a></li>
+              <li><a href="routes.html">Nuestras Rutas más Famosas</a></li>
+              <li><a href="routes.html">Ruta del Café</a></li>
+              <li><a href="routes.html">La Ciudad Perdida</a></li>
+              <li><a href="routes.html">Parque Nacional del Tayrona</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h3><a href="contact.html">Contacta</a></h3>
+            <ul class="nav-list">
+              <li><a href="contact.html">¿Cómo llegar a Colombia?</a></li>
+              <li><a href="contact.html">Oficinas de Turismo</a></li>
+              <li><a href="contact.html">Contacta</a></li>
+            </ul>
+          </div>
+        </div>
+
+        
+        <div class="social-media">
+          <div class="social-icons">
+            <button class="social-button">
+              <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
+                />
+              </svg>
+            </button>
+
+            <button class="social-button">
+              <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
+                />
+              </svg>
+            </button>
+
+            <button class="social-button">
+              <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"
+                />
+              </svg>
+            </button>
+
+            <button class="social-button">
+              <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.892l4.917 2.892-4.917 2.892v-5.784z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+       
+        <div class="copyright">
+          <p>
+            &copy; 2025 Ministerio de Turismo de Colombia. Todos los derechos
+            reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

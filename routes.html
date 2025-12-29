@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Colombia Maravillosa - Explora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/styles/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/styles/routes.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div class="main-nav">
+        <div class="nav-left">
+          <a href="#">CL</a>
+        </div>
+        <div class="nav-right">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Sobre nosotros</a>
+          <a href="routes.html">Rutas Guiadas</a>
+          <a href="contact.html" class="button">Contáctanos</a>
+        </div>
+      </div>
+
+      <div id="progress"></div>
+    </nav>
+    <!-- Header -->
+    <header>
+      <span class="header-main-title">EXPLORA</span>
+    </header>
+    <!-- Back to Top Button -->
+    <button
+      class="scroll-top-btn"
+      id="scrollBtn"
+      aria-label="Volver arriba"
+    ></button>
+
+    <!-- Explore Regions -->
+    <section class="welcome top">
+      <aside class="welcome-title">
+        <div class="line"></div>
+        <div class="text">
+          <h1>El País de los Mil Paisajes</h1>
+        </div>
+      </aside>
+    </section>
+
+    <section class="explore-region">
+      <h2>Explora la Diversidad Colombiana</h2>
+
+      <div class="region-gallery">
+        <div class="item item-1 item-wide">
+          <p>Los Andes</p>
+        </div>
+        <div class="item item-2 item-wide">
+          <p>Cartagena de Indias</p>
+        </div>
+        <div class="item item-3 item-wide">
+          <p>Selva Amazónica</p>
+        </div>
+        <div class="item item-4 item-wide">
+          <p>Las Llanuras</p>
+        </div>
+        <div class="item item-5 item-wide">
+          <p>Costas Pacíficas</p>
+        </div>
+        <div class="item item-6 item-wide">
+          <p>San Andrés</p>
+        </div>
+      </div>
+      <!-- Regions Info -->
+      <div class="region-text">
+        <aside class="information">
+          <p>
+            Colombia es un país de <span class="bold">contrastes</span> que se
+            refleja en la impresionante diversidad de sus paisajes y
+            ecosistemas. Desde imponentes
+            <span class="bold">montañas</span> hasta vastas
+            <span class="bold">sabanas</span>, pasando por densas
+            <span class="bold">selvas tropicales</span>, costas bañadas por
+            <span class="bold">dos océanos</span> y un mar lleno de colores
+            vibrantes, el territorio colombiano abarca prácticamente todos los
+            climas y ecosistemas imaginables.
+          </p>
+          <br />
+          <p>
+            Colombia está dividida en
+            <span class="bold">seis grandes regiones</span> naturales, cada una
+            con características geográficas, climáticas y culturales muy
+            particulares. Estas regiones son la
+            <span class="bold">Andina</span>, la
+            <span class="bold">Caribe</span>, la
+            <span class="bold">Pacífica</span>, la
+            <span class="bold">Orinoquía</span>, la
+            <span class="bold">Amazónica</span> y la
+            <span class="bold"></span>Insular. Juntas, forman un país tan
+            diverso como vibrante, donde cada territorio tiene su propia
+            historia y su conexión especial con la naturaleza y la cultura.
+          </p>
+        </aside>
+        <aside clas="clasification">
+          <p>
+            <span class="bold">Región Andina:</span> Hogar de los majestuosos
+            Andes, ciudades vibrantes como Bogotá, Medellín y Cali, y paisajes
+            de cafetales y páramos.
+          </p>
+          <p>
+            <span class="bold">Región Caribe:</span> Playas paradisíacas, el
+            encanto colonial de Cartagena y el mágico desierto de la Guajira.
+          </p>
+          <p>
+            <span class="bold">Región Amazónica:</span> Selvas exuberantes
+            llenas de biodiversidad y cultura ancestral.
+          </p>
+          <p>
+            <span class="bold">Región Pacífica:</span> Una costa virgen con
+            ballenas jorobadas y una rica herencia afrocolombiana.
+          </p>
+          <p>
+            <span class="bold">Región Orinoquía:</span>
+            Llanuras infinitas, perfectas para los amantes de la vida silvestre.
+          </p>
+          <p>
+            <span class="bold">Región Insular:</span> Islas de ensueño como San
+            Andrés y Providencia, rodeadas de aguas cristalinas.
+          </p>
+        </aside>
+      </div>
+    </section>
+    <!-- Routes Intro -->
+    <section class="welcome welcome-routes">
+      <aside class="welcome-title">
+        <div class="line"></div>
+        <div class="text">
+          <h1>Las Rutas Más Aclamadas en Redes</h1>
+        </div>
+      </aside>
+    </section>
+    <section class="routes-resume">
+      <div class="travel-pic"></div>
+      <div class="mini-routes">
+        <h2>Tours Más Populares</h2>
+        <div class="route miniroute-1">
+          <img src="assets/img/tour1.jpg" alt="Cafetales de Colombia" />
+          <div class="main-info">
+            <h3>La Ruta del Café</h3>
+            <p>El Eje Cafetero</p>
+            <a href="#cafe" alt="Ir a Ruta del Café"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="route miniroute-2">
+          <img src="assets/img/tour2.png" alt="Sierra Nevada" />
+          <div class="main-info">
+            <h3>La Ciudad Perdida</h3>
+            <p>Santa Marta</p>
+            <a href="#perdida" alt="Ir a Ciudad Perdida"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="route miniroute-3">
+          <img src="assets/img/tour2.jpg" alt="Atardecer en el Caribe" />
+          <div class="main-info">
+            <h3>Parque Nacional del Tayrona</h3>
+            <p>Región del Caribe</p>
+            <a href="#tayrona" alt="Ir a Parque Nacional Tayrona"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Route 1 -->
+    <section class="details-route">
+      <div class="miniheader">
+        <aside>
+          <h2>Ruta del Café</h2>
+          <h3>Eje Cafetero</h3>
+        </aside>
+        <aside class="icons">
+          <div class="info-icons">
+            <i class="fa-regular fa-clock"></i>
+            <p>3 días</p>
+          </div>
+          <div class="info-icons">
+            <i class="fa-regular fa-user"></i>
+            <p>+12 años</p>
+          </div>
+          <div class="info-icons">
+            <i class="fa-solid fa-plane"></i>
+            <p>Aventura/Cultura</p>
+          </div>
+          <div class="info-icons">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Valle del Cocora</p>
+          </div>
+        </aside>
+      </div>
+      <div class="content-route" id="cafe">
+        <aside class="content-info">
+          <h2>La Experiencia Cafetera: Tradición, Naturaleza y Cultura</h2>
+          <p>
+            La <span class="bold">Ruta del Café en el Eje Cafetero</span>, en el
+            corazón de Colombia, abarca los departamentos de
+            <span class="bold">Caldas, Quindío y Risaralda</span>, reconocidos
+            por sus paisajes culturales declarados
+            <span class="bold"></span>Patrimonio de la Humanidad por la UNESCO.
+          </p>
+          <p>
+            Durante esta travesía de <span class="bold">tres días</span>, los
+            visitantes explorarán pintorescos pueblos como Salento, Manizales y
+            Pereira, disfrutarán de miradores impresionantes, aprenderán sobre
+            el <span class="bold">proceso del café</span> en fincas
+            tradicionales y degustarán
+            <span class="bold">el mejor café</span> del mundo mientras descubren
+            la calidez de sus habitantes.
+          </p>
+
+          <p>En este viaje podrás disfrutar de:</p>
+          <div class="content-icons">
+            <i class="fa-regular fa-eye"></i>
+            <p><span class="bold">Degustación de cafés exquisitos</span></p>
+          </div>
+          <div class="content-icons">
+            <i class="fa-regular fa-eye"></i>
+            <p><span class="bold">Talleres de artesanía tradicional</span></p>
+          </div>
+          <div class="content-icons">
+            <i class="fa-regular fa-eye"></i>
+            <p><span class="bold">Aguas termales</span></p>
+          </div>
+        </aside>
+        <aside class="content-pic"></aside>
+      </div>
+      <div class="planning">
+        <h2>Planificación de la Ruta por Días</h2>
+        <div class="experience" id="exp1">
+          <div class="experience-header">
+            <span class="number">01</span>
+            <span class="title">Manizales y las montañas cafeteras</span>
+            <button
+              class="toggle-btn"
+              onclick="toggleContent('content1', this)"
+            >
+              →
+            </button>
+          </div>
+          <div class="experience-content" id="content1">
+            <div class="text">
+              <p>
+                Visita a una <span class="bold">finca cafetera</span> cercana
+                como Hacienda Venecia, donde se realiza un tour completo por los
+                <span class="bold">cafetales</span>. Aprenderás sobre el
+                cultivo, recolección y procesos del grano.
+              </p>
+              <p>
+                Visita la
+                <span class="bold">Catedral Basílica de Manizales</span>, una
+                obra arquitectónica impresionante con su mirador que ofrece
+                vistas panorámicas de la región.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience" id="exp2">
+          <div class="experience-header">
+            <span class="number">02</span>
+            <span class="title">Salento y Valle del Cocora</span>
+            <button
+              class="toggle-btn"
+              onclick="toggleContent('content2', this)"
+            >
+              →
+            </button>
+          </div>
+          <div class="experience-content" id="content2">
+            <div class="text">
+              <p>
+                Recorre sus calles empedradas para conocer
+                <span class="bold">talleres de artesanía</span> y probar
+                <span class="bold">delicias locales</span> como la trucha con
+                patacón.
+              </p>
+              <p>
+                Visita el <span class="bold">Valle del Cocora</span>, hogar de
+                la palma de cera, el árbol nacional de Colombia. Aquí podrás
+                caminar entre las altísimas palmas, montar a caballo y disfrutar
+                de <span class="bold">paisajes inolvidables</span>.
+              </p>
+              <p>
+                Visita a una finca cafetera en las afueras de Salento, como la
+                Finca El Ocaso, para continuar explorando el proceso de
+                producción del café y degustar variedades locales.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience" id="exp3">
+          <div class="experience-header">
+            <span class="number">03</span>
+            <span class="title">Pereira y termales en Santa Rosa de Cabal</span>
+            <button
+              class="toggle-btn"
+              onclick="toggleContent('content3', this)"
+            >
+              →
+            </button>
+          </div>
+          <div class="experience-content" id="content3">
+            <div class="text">
+              <p>
+                Recorre el <span class="bold">Parque El Lago</span> y visita a
+                la Plaza de Bolívar, con su famosa escultura del Bolívar
+                Desnudo.
+              </p>
+              <p>
+                Relájate en las
+                <span class="bold">aguas termales naturales</span> rodeadas de
+                montañas y cascadas, ideales para concluir la ruta con un toque
+                de descanso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Route 2 -->
+    <section class="details-route" id="perdida">
+      <div class="miniheader">
+        <aside>
+          <h2>Ruta de la Ciudad Perdida</h2>
+          <h3>Sierra Nevada</h3>
+        </aside>
+        <aside class="icons">
+          <div class="info-icons">
+            <i class="fa-regular fa-clock"></i>
+            <p>4 días</p>
+          </div>
+          <div class="info-icons">
+            <i class="fa-regular fa-user"></i>
+            <p>+12 años</p>
+          </div>
+          <div class="info-icons">
+            <i class="fa-solid fa-plane"></i>
+            <p>Senderismo/Cultura</p>
+          </div>
+          <div class="info-icons">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Santa Marta</p>
+          </div>
+        </aside>
+      </div>
+      <div class="content-route" id="cafe">
+        <aside class="content-info">
+          <h2>Aventura Ancestral: Descubre la Ciudad Perdida</h2>
+          <p>
+            Ubicada en la majestuosa Sierra Nevada de Santa Marta,
+            <span class="bold">la Ciudad Perdida</span>, (o Teyuna) es un sitio
+            arqueológico sagrado de los
+            <span class="bold">indígenas tayronas</span>, rodeado de
+            <span class="bold">selva exuberante</span> y paisajes inolvidables.
+            Esta experiencia de 4 días combina
+            <span class="bold">senderismo desafiante</span>, encuentros
+            culturales y la posibilidad de descubrir uno de los
+            <span class="bold">tesoros históricos</span> más impresionantes de
+            Colombia
+          </p>
+          <p>
+            A lo largo de la ruta, los visitantes disfrutarán de vistas
+            panorámicas de la selva, baños refrescantes en
+            <span class="bold">ríos cristalinos</span> y el contacto directo con
+            comunidades indígenas que preservan sus
+            <span class="bold">tradiciones ancestrales</span>.
+          </p>
+
+          <p>En este viaje podrás disfrutar de:</p>
+          <div class="content-icons">
+            <i class="fa-regular fa-eye"></i>
+            <p><span class="bold">Naturaleza fascinante selvática</span></p>
+          </div>
+          <div class="content-icons">
+            <i class="fa-regular fa-eye"></i>
+            <p>
+              <span class="bold"
+                >Intercambio de culturas con asentamientos indígenas</span
+              >
+            </p>
+          </div>
+          <div class="content-icons">
+            <i class="fa-regular fa-eye"></i>
+            <p><span class="bold">Acampada en una Reserva Natural</span></p>
+          </div>
+        </aside>
+        <aside class="content-pic route-2"></aside>
+      </div>
+      <div class="planning">
+        <h2>Planificación de la Ruta por Días</h2>
+        <div class="experience" id="exp4">
+          <div class="experience-header">
+            <span class="number">01</span>
+            <span class="title"
+              >Inicio de la travesía y primer contacto con la selva</span
+            >
+            <button
+              class="toggle-btn"
+              onclick="toggleContent('content4', this)"
+            >
+              →
+            </button>
+          </div>
+          <div class="experience-content" id="content4">
+            <div class="text">
+              <p>
+                Viaja desde Santa Marta hasta el campamento base en Machete
+                Pelao (aproximadamente 2 horas en vehículo 4x4).
+              </p>
+              <p>
+                Disfruta de la selva en su máximo esplendor y relájate en una
+                hamaca bajo los mosquiteros.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience" id="exp5">
+          <div class="experience-header">
+            <span class="number">02</span>
+            <span class="title">Profundizando en la Sierra Nevada</span>
+            <button
+              class="toggle-btn"
+              onclick="toggleContent('content5', this)"
+            >
+              →
+            </button>
+          </div>
+          <div class="experience-content" id="content5">
+            <div class="text">
+              <p>
+                Recorre a lo largo del río Buritaca, con paradas para nadar en
+                piscinas naturales y observar la flora y fauna local.
+              </p>
+              <p>
+                Descubre la comunidad indígena de los koguis, quienes
+                compartirán su visión espiritual del territorio.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience" id="exp6">
+          <div class="experience-header">
+            <span class="number">03</span>
+            <span class="title">Exploración de la Ciudad Perdida</span>
+            <button
+              class="toggle-btn"
+              onclick="toggleContent('content6', this)"
+            >
+              →
+            </button>
+          </div>
+          <div class="experience-content" id="content6">
+            <div class="text">
+              <p>
+                Asciende por un sendero de 1,200 escalones de piedra que llevan
+                a la Ciudad Perdida.
+              </p>
+              <p>
+                Recorre las terrazas, caminos y plazas ceremoniales del sitio
+                arqueológico, mientras aprendes sobre la historia de los
+                tayronas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience" id="exp7">
+          <div class="experience-header">
+            <span class="number">04</span>
+            <span class="title">Retorno a Machete Pelao</span>
+            <button
+              class="toggle-btn"
+              onclick="toggleContent('content7', this)"
+            >
+              →
+            </button>
+          </div>
+          <div class="experience-content" id="content7">
+            <div class="text">
+              <p>Regresa a Machete disfrutando de los ríos y miradores.</p>
+              <p>
+                Descansa en la ciudad y disfruta de los caprichos que te puede
+                ofrecer la comodidad de Machete Pelao.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Route 3 -->
+    <section class="details-route" id="tayrona">
+      <div class="miniheader">
+        <aside>
+          <h2>Parque Nacional del Tayrona</h2>
+          <h3>Costa Caribeña</h3>
+        </aside>
+        <aside class="icons">
+          <div class="info-icons">
+            <i class="fa-regular fa-clock"></i>
+            <p>4 días</p>
+          </div>
+          <div class="info-icons">
+            <i class="fa-regular fa-user"></i>
+            <p>+6 años</p>
+          </div>
+          <div class="info-icons">
+            <i class="fa-solid fa-plane"></i>
+            <p>Naturaleza/Cultura</p>
+          </div>
+          <div class="info-icons">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Santa Marta</p>
+          </div>
+        </aside>
+      </div>
+      <div class="content-route" id="cafe">
+        <aside class="content-info">
+          <h2>El Paraíso Natural del Parque Nacional Tayrona</h2>
+          <p>
+            El <span class="bold">Parque Nacional Tayrona</span>, ubicado en la
+            costa caribeña de Colombia, es un paraíso donde se unen
+            <span class="bold">playas de arena blanca</span>, montañas
+            imponentes y <span class="bold">selva tropical</span>. Durante esta
+            ruta de 4 días, los visitantes podrán explorar ecosistemas variados,
+            descubrir playas escondidas y aprender sobre la rica
+            <span class="bold">herencia cultural</span>
+            indígena de la región.
+          </p>
+          <p>
+            Este viaje ofrece una experiencia única de contacto con la
+            naturaleza, perfecta para los amantes del ecoturismo y la
+            <span class="bold">tranquilidad</span>.
+          </p>
+
+          <p>En este viaje podrás disfrutar de:</p>
+          <div class="content-icons">
+            <i class="fa-regular fa-eye"></i>
+            <p><span class="bold">Playas paradisíacas</span></p>
+          </div>
+          <div class="content-icons">
+            <i class="fa-regular fa-eye"></i>
+            <p>
+              <span class="bold"
+                >Contacto cultural con vestigios de otras civilizaciones</span
+              >
+            </p>
+          </div>
+          <div class="content-icons">
+            <i class="fa-regular fa-eye"></i>
+            <p><span class="bold">Avistamiento de fauna en el Caribe</span></p>
+          </div>
+        </aside>
+        <aside class="content-pic route-3"></aside>
+      </div>
+      <div class="planning">
+        <h2>Planificación de la Ruta por Días</h2>
+        <div class="experience" id="exp8">
+          <div class="experience-header">
+            <span class="number">01</span>
+            <span class="title">Entrada al parque y Playa Cañaveral</span>
+            <button
+              class="toggle-btn"
+              onclick="toggleContent('content8', this)"
+            >
+              →
+            </button>
+          </div>
+          <div class="experience-content" id="content8">
+            <div class="text">
+              <p>
+                Adéntrate en <span class="bold">el Cañaveral</span>, una playa
+                de belleza impresionante rodeada de palmeras. Tendrás la
+                posibilidad de instalarte en el eco-lodge o una zona de camping.
+              </p>
+              <p>
+                Podrás explorar playas cercanas y relajarte con las
+                <span class="bold">vistas del mar Caribe</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience" id="exp9">
+          <div class="experience-header">
+            <span class="number">02</span>
+            <span class="title"
+              >Senderismo hacia Arrecifes y Playa La Piscina</span
+            >
+            <button
+              class="toggle-btn"
+              onclick="toggleContent('content9', this)"
+            >
+              →
+            </button>
+          </div>
+          <div class="experience-content" id="content9">
+            <div class="text">
+              <p>
+                Disfruta de paisajes selváticos, pasando por
+                <span class="bold">fauna local</span> como monos y aves
+                tropicales. Podrás visitar <span class="bold">Arrecifes</span>,
+                una playa para admirar (aunque no apta para nadar debido a sus
+                corrientes).
+              </p>
+              <p>
+                No puedes perderte la playa
+                <span class="bold">La Piscina</span>, una playa segura con aguas
+                tranquilas, ideal para nadar y practicar snorkel.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience" id="exp10">
+          <div class="experience-header">
+            <span class="number">03</span>
+            <span class="title">Playa Cabo San Juan del Guía</span>
+            <button
+              class="toggle-btn"
+              onclick="toggleContent('content10', this)"
+            >
+              →
+            </button>
+          </div>
+          <div class="experience-content" id="content10">
+            <div class="text">
+              <p>
+                Podrás hacer una caminata desde
+                <span class="bold">Playa La Piscina</span> hacia el icónico Cabo
+                San Juan del Guía (1 hora), una de las playas más emblemáticas
+                del parque. Allí podrás disfrutar de esta
+                <span class="bold">playa paradisíaca</span>, rodeada de enormes
+                rocas graníticas y aguas cristalinas.
+              </p>
+
+              <p>
+                Además, tendras la posibilidad de practicar
+                <span class="bold">snorkel</span> o explorar pequeñas calas
+                cercanas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience" id="exp11">
+          <div class="experience-header">
+            <span class="number">04</span>
+            <span class="title">Pueblito Chairama y salida del parque</span>
+            <button
+              class="toggle-btn"
+              onclick="toggleContent('content11', this)"
+            >
+              →
+            </button>
+          </div>
+          <div class="experience-content" id="content11">
+            <div class="text">
+              <p>
+                El <span class="bold">Pueblito Chairama</span> es un antiguo
+                asentamiento indígena tayrona.
+              </p>
+
+              <p>
+                Explora sus <span class="bold">ruinas arqueológicas</span>, como
+                terrazas y caminos de piedra, mientras aprendes sobre la
+                historia y cultura de los indígenas tayronas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-info"></div>
+
+          <div class="footer-nav">
+            <h3><a href="index.html">Inicio</a></h3>
+            <ul class="nav-list">
+              <li><a href="index.html">Descubre Colombia</a></li>
+              <li><a href="index.html">Explora la Región</a></li>
+              <li><a href="index.html">Nuestra Historia</a></li>
+              <li><a href="index.html">Galería</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h3><a href="about.html">Sobre Nosotros</a></h3>
+            <ul class="nav-list">
+              <li><a href="about.html">¿Por qué Viajar a Colombia?</a></li>
+              <li><a href="about.html">Ministerio de Turismo</a></li>
+              <li><a href="about.html">Valores</a></li>
+              <li><a href="about.html">Identidad</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h3><a href="routes.html">Principales Rutas</a></h3>
+            <ul class="nav-list">
+              <li><a href="routes.html">Regiones</a></li>
+              <li><a href="routes.html">Nuestras Rutas más Famosas</a></li>
+              <li><a href="routes.html">Ruta del Café</a></li>
+              <li><a href="routes.html">La Ciudad Perdida</a></li>
+              <li><a href="routes.html">Parque Nacional del Tayrona</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h3><a href="contact.html">Contacta</a></h3>
+            <ul class="nav-list">
+              <li><a href="contact.html">¿Cómo llegar a Colombia?</a></li>
+              <li><a href="contact.html">Oficinas de Turismo</a></li>
+              <li><a href="contact.html">Contacta</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <div class="social-icons">
+            <button class="social-button">
+              <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
+                />
+              </svg>
+            </button>
+
+            <button class="social-button">
+              <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
+                />
+              </svg>
+            </button>
+
+            <button class="social-button">
+              <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"
+                />
+              </svg>
+            </button>
+
+            <button class="social-button">
+              <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.892l4.917 2.892-4.917 2.892v-5.784z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; 2025 Ministerio de Turismo de Colombia. Todos los derechos
+            reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
